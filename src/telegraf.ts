@@ -14,7 +14,7 @@ import { Polling } from './core/network/polling'
 import pTimeout from 'p-timeout'
 import Telegram from './telegram'
 import { TlsOptions } from 'tls'
-import safeCompare = require('safe-compare')
+import { safeCompare } from './util-safe-compare'
 const debug = d('telegraf:main')
 
 const DEFAULT_OPTIONS: Telegraf.Options<Context> = {
